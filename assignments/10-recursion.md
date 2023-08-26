@@ -27,7 +27,16 @@
 ```java
       n = a ^ x 
       a = 2, 3, 4
-      (2 ^ -31) <= n <= (2 ^ 31) - 1      
+      (2 ^ -31) <= n <= (2 ^ 31) - 1
+public static int find(int n,int a){
+if(n==0){
+return 00;
+}else if(n==1){
+return 0;
+}else if(n>=a){
+return find(n/a,a);
+}else return 00;
+}
 ```
 - [Write a recursive function that returns the factorial of a number.](https://www.hackerrank.com/challenges/30-recursion/problem) `HackerRank`
 - [Write a recursive function to check whether an array is sorted or not.](https://www.geeksforgeeks.org/program-check-array-sorted-not-iterative-recursive) `GFG`
